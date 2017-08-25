@@ -1,0 +1,27 @@
+switch to tensorflow 1.0:              done
+replicate the original results:        done
+add prediction:                        done
+add evaluation on test set by eval.pl: done
+refactor code with more encapsulation: done
+add checkpointing:                     done
+add logging:                           done/simple enough for tensorboard graphs
+implement model without bicond_tf10:   done
+early_stopping:                        not done/not for course project
+tfdbg:                                 not done/not stable
+tf.train.Saver vs
+  tf.summary.FileWriter:               not done/not for course project
+F1 measure:                            not done
+can we optimize wrt to F1?:            not done/not for course project
+Rocktaschel et al. (2016):             done
+matching LSTM:                         done
+Xavier init:                           not done
+add dropout:                           not done
+implement model without utils:         not done
+bidirectional + Bengio Attention:      not done
+two stage classification:              not done
+unit testing with numpy:               bad idea
+
+
+
+Note: it is possible to compute lengths of sequences inside the graph using
+tf.nn.embedding_lookup_sparse.
