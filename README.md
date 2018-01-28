@@ -1,5 +1,5 @@
 # stance-detection
-code for my thesis
+code for my MSc thesis: Statistical Modeling Of Stance Detection
 
 ## Abstract
 In recent years fake news has become a more serious problem. This is mainly due to the popularity of social networks, search engines and news ag- gregators that propagate fake news. Classifying news as fake is a hard problem. However it is possible to distinguish between fake and real news, by consider- ing how many related tweets agree/disagree with the news. Therefore, in the simplest case the problem can be reduced to identifying whether a given tweet agrees with, disagrees with or is unrelated to the news in question. In general this problem is referred to as ’stance detection’. In machine learning termi- nology this is a classification problem. This thesis investigates more advanced Natural Language Models, such as matching Long Short Term Memory model and soft attention mechanism applied to stance detection problem. The ideas are tested using a publicly available data set.
