@@ -2,3 +2,4 @@
 logs/*
 tf_saver_files/*
 *.pyc
+.env/
