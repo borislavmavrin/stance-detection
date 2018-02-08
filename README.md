@@ -7,10 +7,19 @@ In recent years fake news has become a more serious problem. This is mainly due 
 ## For more details see the thesis: Mavrin_Borislav_201709_MSc.pdf
 
 ## How to run code:
- 1. cd stance-detection
- 2. pip2 install virtualenv
- 3. virtualenv -p python2 .env
- 4. source .env/bin/activate # Activate the virtual environment
- 5. pip2 install -r requirements.txt # Install dependencies
- 6. python2 -c "import nltk nltk.download('stopwords')" # Install stopword corpus into home folder
- Note: installing modules from requirements.txt is crucial since the tensoflow API was changing a lot at the time of the creation of the code.
+### 1. Install and activate virtual enviroment:
+ ```
+ cd stance-detection
+ pip2 install virtualenv
+ virtualenv -p python2 .env
+ source .env/bin/activate
+ ```
+### 2. Install dependencies:
+ ```
+ pip2 install -r requirements.txt
+ ```
+### 3. Install stopword corpus into home folder:
+```
+python2 -c "import nltk nltk.download('stopwords')"
+```
+### Note: installing modules from requirements.txt is crucial since the TensoFlow API was changing a lot at the time of the creation of the code.
