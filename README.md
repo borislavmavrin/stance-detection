@@ -13,9 +13,9 @@ Given a time-series {x_1, x_2, ... x_T}:
  2. Update h_1 = f(W_h * h_0 + W_x * x_1)
  3. Fit the model by predicting x_2: min (W * h_1 - x_2) with respect to W_h, W_x, W.
 
-W_h, W_x, W are estimated weight matrices, f is an activataion function, usually sigmoid or tangh. Note that W_h, W_x and W are the same for each step in the time series.
+W_h, W_x, W are estimated weight matrices, f is an activation function, usually sigmoid or tangh. Note that W_h, W_x and W are the same for each step in the time series.
 
-However, estimation of RNN is complicated by the Vanishing/Exploding gradient problem. During gradient descent updates the gradient might vanish or diverge to infinity. The gradient has the form of g^T, i.e. some expression raised to the power T (lenght of the time series sequence). Hence, if g becomes small, the gradient g^T vanishes, and if g is big enough, g^T explodes.
+However, estimation of RNN is complicated by the Vanishing/Exploding gradient problem. During gradient descent updates the gradient might vanish or diverge to infinity. The gradient has the form of g^T, i.e. some expression raised to the power T (length of the time series sequence). Hence, if g becomes small, the gradient g^T vanishes, and if g is big enough, g^T explodes.
 LSTM introduced gating mechanism which mitigates the problem. In short LSTM might 'forget' the h_t or x_t. LSTM dynamically changes importance weight of h_t and x_t at each step. A very good introduction can be found here: http://colah.github.io/posts/2015-08-Understanding-LSTMs/
 
 ## Soft attention
@@ -36,12 +36,12 @@ the problem is to align groups of corresponding words, i.e. (e_1 ~ f_1, f_2, f_3
 
 [0, 0, 0, 1]]
 
-Soft attention mechanism tries to learn these correspndence by modeling the weighting matrix in a soft way. Soft here means that the weights are not necessarily 0, 1, but rather from 0 to 1. This allows for the model to be end-to-end diffrentiable and thus can be estimated by gradient descent. This attention mechanism can be easily adapteed to a more genral class of time-series problems.
+Soft attention mechanism tries to learn these correspondence by modeling the weighting matrix in a soft way. Soft here means that the weights are not necessarily 0, 1, but rather from 0 to 1. This allows for the model to be end-to-end differentiable  and thus can be estimated by gradient descent. This attention mechanism can be easily adapted to a more general class of time-series problems.
 
 ### For more details see the thesis (file inside the repo): Mavrin_Borislav_201709_MSc.pdf
 
 ## How to run code:
-### 1. Install and activate virtual enviroment:
+### 1. Install and activate virtual environment:
  ```bash
  cd stance-detection
  pip2 install virtualenv
