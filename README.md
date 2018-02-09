@@ -9,7 +9,7 @@ LSTM is a non-linear hidden time-series model. It is based on Recurrent Neural N
 RNN can be defined inductively in the following way
 
 Given a time-series {x_1, x_2, ... x_T}:
- 1. Intialize hidden state: h_0 = 0
+ 1. Initialize hidden state: h_0 = 0
  2. Update h_1 = f(W_h * h_0 + W_x * x_1)
  3. Fit the model by predicting x_2: min (W * h_1 - x_2) with respect to W_h, W_x, W.
 
