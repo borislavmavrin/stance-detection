@@ -36,7 +36,7 @@ the problem is to align groups of corresponding words, i.e. (e_1 ~ f_1, f_2, f_3
 
 [0, 0, 0, 1]]
 
-Soft attention mechanism tries to learn these correspondence by modeling the weighting matrix in a soft way. Soft here means that the weights are not necessarily 0, 1, but rather from 0 to 1. This allows for the model to be end-to-end differentiable  and thus can be estimated by gradient descent. This attention mechanism can be easily adapted to a more general class of time-series problems.
+Soft attention mechanism tries to learn these correspondence by modeling the weighting matrix in a soft way. Soft here means that the weights are not necessarily 0, 1, but rather from 0 to 1. This allows the model to be end-to-end differentiable  and thus can be estimated by gradient descent. This attention mechanism can be easily adapted to a more general class of time-series problems.
 
 ### For more details see the thesis (file inside the repo): Mavrin_Borislav_201709_MSc.pdf
 
